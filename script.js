@@ -2,7 +2,7 @@ const ZALO_NUMBER = "0907808645";
 const ZALO_URL = "https://zalo.me/" + ZALO_NUMBER;
 
 const products = [
-  {id:1,name:"Túi Tote Vải Canvas",category:"Túi",price:119000,icon:"👜",desc:"Túi handmade nhỏ xinh"},
+  {id:1,name:"Túi Xách Vải Canvas",category:"Túi",price:119000,icon:"👜",desc:"Túi handmade nhỏ xinh"},
   {id:2,name:"Ví Vải Thô/Canvas",category:"Bóp / Ví",price:149000,icon:"👛",desc:"Gọn gàng, tiện mang theo"},
   {id:3,name:"Cột Tóc Scrunchies",category:"Phụ kiện tóc",price:20000 - 55000,icon:"🎀",desc:"Vải Xô Muslim/ Thô"},
   {id:4,name:"Kẹp Tóc Handmade",category:"Phụ kiện tóc",price:45000,icon:"🌼",desc:"Điểm nhấn nhẹ nhàng"},
