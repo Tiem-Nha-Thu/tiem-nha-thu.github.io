@@ -4,16 +4,16 @@ const ZALO_URL = "https://zalo.me/" + ZALO_NUMBER;
 const products = [
   {id:1,name:"Túi Xách Vải Canvas",category:"Túi",price:119000,icon:"👜",desc:"Túi handmade nhỏ xinh"},
   {id:2,name:"Ví Vải Thô/Canvas",category:"Bóp / Ví",price:149000,icon:"👛",desc:"Gọn gàng, tiện mang theo"},
-  {id:3,name:"Cột Tóc Scrunchies",category:"Phụ kiện tóc",price:20000 - 55000,icon:"🎀",desc:"Vải Xô Muslim/ Thô"},
+  {id:3,name:"Cột Tóc Scrunchies",category:"Phụ kiện tóc",price:20000,icon:"🎀",desc:"Vải Xô Muslim/ Thô"},
   {id:4,name:"Kẹp Tóc Handmade",category:"Phụ kiện tóc",price:45000,icon:"🌼",desc:"Điểm nhấn nhẹ nhàng"},
-  {id:5,name:"Dây Chuyền",category:"Trang sức",price:15000 - 79000,icon:"📿",desc:"Phụ kiện xinh xắn, thu hút tài lộc"},
-  {id:6,name:"Móc khóa Handmade",category:"Móc khóa",price:9000 - 89000,icon:"🔑",desc:"Món quà nhỏ đáng yêu"},
+  {id:5,name:"Dây Chuyền",category:"Trang sức",price:15000,icon:"📿",desc:"Phụ kiện xinh xắn, thu hút tài lộc"},
+  {id:6,name:"Móc khóa Handmade",category:"Móc khóa",price:9000,icon:"🔑",desc:"Món quà nhỏ đáng yêu"},
   {id:7,name:"Gối Ghim Kim",category:"Gối ghim kim",price:49000,icon:"🧵",desc:"Bạn đồng hành cho góc may vá"},
-  {id:8,name:"Phụ Kiện DIY",category:"DIY",price:9000 - 39000,icon:"🧶",desc:"Tự tay làm món đồ của bạn"},
-  {id:9,name:"Túi Make Up/ Sò",category:"Túi",price:39000 - 79000,icon:"👜",desc:"Nhỏ gọn cho những ngày xinh"},
+  {id:8,name:"Phụ Kiện DIY",category:"DIY",price:9900,icon:"🧶",desc:"Tự tay làm món đồ của bạn"},
+  {id:9,name:"Túi Make Up/ Sò",category:"Túi",price:39000,icon:"👜",desc:"Nhỏ gọn cho những ngày xinh"},
   {id:10,name:"Bóp Bút/ Viết",category:"Bóp / Ví",price:79000,icon:"💝",desc:"Dung tích lớn, nhiều công dụng"},
-  {id:11,name:"Túi Đựng Laptop/ Tai Nghe",category:"Phụ kiện tóc",price:39000 - 129000,icon:"🎀",desc:"Phong cách vintage"},
-  {id:12,name:"Tag Tên Theo Yêu Cầu",category:"DIY",price:19000 - 59000,icon:"✨",desc:"Mix & match theo ý thích"}
+  {id:11,name:"Túi Đựng Laptop/ Tai Nghe",category:"Túi",price:39000,icon:"🎀",desc:"Phong cách vintage"},
+  {id:12,name:"Tag Tên Theo Yêu Cầu",category:"DIY",price:19000,icon:"✨",desc:"Mix & match theo ý thích"}
 ];
 
 let cart = JSON.parse(localStorage.getItem("tnth_cart") || "[]");
