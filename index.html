@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tiệm Nhà Thư - Handmade & DIY | Túi, bóp ví, cột tóc, kẹp tóc, dây chuyền, móc khóa, gối ghim kim và phụ kiện DIY.">
+  <title>Tiệm Nhà Thư - Handmade & DIY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="brand-mark">✿</span>
+        <span>
+          <strong>Tiệm Nhà Thư</strong>
+          <small>Handmade & DIY</small>
+        </span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#san-pham">Sản phẩm</a>
+        <a href="#gioi-thieu">Về tiệm</a>
+        <a href="#huong-dan">Đặt hàng</a>
+      </nav>
+      <button class="cart-button" id="openCart" aria-label="Mở giỏ hàng">
+        🛒 <span>Giỏ hàng</span><b id="cartCount">0</b>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">HANDMADE WITH LOVE</span>
+          <h1>Những món nhỏ xinh,<br><em>làm bằng cả tấm lòng.</em></h1>
+          <p>Đồ handmade & phụ kiện DIY đáng yêu cho những ngày muốn tự thưởng cho mình một chút dịu dàng.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#san-pham">Khám phá sản phẩm</a>
+            <a class="btn secondary" href="#gioi-thieu">Về Tiệm Nhà Thư</a>
+          </div>
+          <div class="trust-row">
+            <span>♡ Làm thủ công</span>
+            <span>✦ Gói hàng xinh</span>
+            <span>☼ Đặt qua Zalo</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Minh họa sản phẩm handmade">
+          <div class="blob"></div>
+          <div class="art-card card-a">👜</div>
+          <div class="art-card card-b">🎀</div>
+          <div class="art-card card-c">🧵</div>
+          <div class="sticker">handmade<br>♡ for you</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories" id="san-pham">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">GÓC NHỎ CỦA TIỆM</span>
+            <h2>Chọn món bạn thích</h2>
+          </div>
+          <p>Mỗi món đều có thể trở thành một món quà nho nhỏ dành cho bạn hoặc người thương.</p>
+        </div>
+        <div class="category-list" id="categoryList"></div>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div class="container">
+        <div class="toolbar">
+          <div>
+            <span class="eyebrow">SHOP</span>
+            <h2>Sản phẩm mới xinh</h2>
+          </div>
+          <div class="toolbar-right">
+            <label class="search">
+              <span>⌕</span>
+              <input id="searchInput" type="search" placeholder="Tìm sản phẩm...">
+            </label>
+            <select id="sortSelect" aria-label="Sắp xếp sản phẩm">
+              <option value="default">Mặc định</option>
+              <option value="price-asc">Giá thấp → cao</option>
+              <option value="price-desc">Giá cao → thấp</option>
+              <option value="name">Tên A → Z</option>
+            </select>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <div class="empty-state hidden" id="emptyState">Không tìm thấy sản phẩm phù hợp.</div>
+      </div>
+    </section>
+
+    <section class="about" id="gioi-thieu">
+      <div class="container about-grid">
+        <div class="about-photo">
+          <div class="photo-placeholder">
+            <span>✿</span>
+            <strong>TIỆM NHÀ THƯ</strong>
+            <small>Handmade & DIY</small>
+          </div>
+        </div>
+        <div class="about-copy">
+          <span class="eyebrow">CHÀO BẠN, MÌNH LÀ NHÀ THƯ</span>
+          <h2>Một tiệm nhỏ dành cho những người yêu đồ xinh.</h2>
+          <p>Tiệm Nhà Thư là một góc nhỏ dành cho những món đồ handmade, phụ kiện và vật liệu DIY. Mình chọn từng món với mong muốn mang đến những sản phẩm dễ thương, gần gũi và có một chút dấu ấn riêng.</p>
+          <p>Cảm ơn bạn đã ghé tiệm và ủng hộ những sản phẩm thủ công. ♡</p>
+          <div class="about-note">“Một món đồ nhỏ cũng có thể làm một ngày bình thường trở nên vui hơn.”</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="huong-dan">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">MUA HÀNG THẬT DỄ</span>
+          <h2>Đặt hàng qua Zalo</h2>
+        </div>
+        <div class="steps">
+          <div class="step"><span>01</span><h3>Chọn món</h3><p>Thêm những sản phẩm bạn thích vào giỏ hàng.</p></div>
+          <div class="step"><span>02</span><h3>Kiểm tra đơn</h3><p>Xem lại sản phẩm, số lượng và tổng tiền.</p></div>
+          <div class="step"><span>03</span><h3>Gửi Zalo</h3><p>Bấm đặt hàng, website tạo sẵn nội dung để bạn gửi tiệm.</p></div>
+        </div>
+        <div class="zalo-box">
+          <div><strong>Đặt hàng trực tiếp với Tiệm Nhà Thư</strong><span>Zalo: 0907808645</span></div>
+          <button class="btn primary" id="zaloDirect">💬 Mở Zalo</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><a class="brand" href="#"><span class="brand-mark">✿</span><span><strong>Tiệm Nhà Thư</strong><small>Handmade & DIY</small></span></a><p>Những món nhỏ xinh, làm bằng cả tấm lòng. ♡</p></div>
+      <div><strong>Danh mục</strong><a href="#san-pham" data-footer-cat="Túi">Túi</a><a href="#san-pham" data-footer-cat="Bóp / Ví">Bóp / Ví</a><a href="#san-pham" data-footer-cat="Phụ kiện tóc">Phụ kiện tóc</a><a href="#san-pham" data-footer-cat="DIY">Phụ kiện DIY</a></div>
+      <div><strong>Liên hệ</strong><span>Zalo: 0907808645</span><a href="https://zalo.me/0907808645" target="_blank" rel="noopener">Nhắn tin Zalo ↗</a></div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Tiệm Nhà Thư - Handmade & DIY</div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-panel">
+      <div class="cart-head"><div><span class="eyebrow">YOUR BAG</span><h2>Giỏ hàng</h2></div><button id="closeCart" class="icon-btn">×</button></div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-bottom">
+        <div class="total"><span>Tạm tính</span><strong id="cartTotal">0đ</strong></div>
+        <button class="btn primary full" id="checkout">💬 Đặt hàng qua Zalo</button>
+        <small>Website sẽ tạo nội dung đơn hàng để bạn gửi cho Tiệm Nhà Thư trên Zalo.</small>
+      </div>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
