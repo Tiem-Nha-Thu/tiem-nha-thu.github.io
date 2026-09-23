@@ -5,7 +5,7 @@ const products = [
   {id:1,name:"Túi Xách Vải Canvas",category:"Túi",price:119000,icon:"👜",desc:"Túi handmade nhỏ xinh"},
   {id:2,name:"Ví Vải Thô/Canvas",category:"Bóp / Ví",price:149000,icon:"👛",desc:"Gọn gàng, tiện mang theo"},
   {id:3,name:"Cột Tóc Scrunchies",category:"Phụ kiện tóc",price:20000,icon:"🎀",desc:"Vải Xô Muslim/ Thô"},
-  {id:4,name:"Kẹp Tóc Handmade",category:"Phụ kiện tóc",price:45000,icon:"🌼",desc:"Điểm nhấn nhẹ nhàng"},
+  {id:4,name:"Kẹp Tóc Handmade",category:"Phụ kiện tóc",price:25000,icon:"🌼",desc:"Điểm nhấn nhẹ nhàng"},
   {id:5,name:"Dây Chuyền",category:"Trang sức",price:15000,icon:"📿",desc:"Phụ kiện xinh xắn, thu hút tài lộc"},
   {id:6,name:"Móc khóa Handmade",category:"Móc khóa",price:9000,icon:"🔑",desc:"Món quà nhỏ đáng yêu"},
   {id:7,name:"Gối Ghim Kim",category:"Gối ghim kim",price:49000,icon:"🧵",desc:"Bạn đồng hành cho góc may vá"},
