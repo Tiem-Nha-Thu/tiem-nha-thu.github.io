@@ -2,18 +2,18 @@ const ZALO_NUMBER = "0907808645";
 const ZALO_URL = "https://zalo.me/" + ZALO_NUMBER;
 
 const products = [
-  {id:1,name:"Túi vải hoa nhí",category:"Túi",price:129000,icon:"👜",desc:"Túi handmade nhỏ xinh"},
-  {id:2,name:"Ví vải mini",category:"Bóp / Ví",price:89000,icon:"👛",desc:"Gọn gàng, tiện mang theo"},
-  {id:3,name:"Cột tóc scrunchie",category:"Phụ kiện tóc",price:35000,icon:"🎀",desc:"Vải mềm, nhiều màu"},
-  {id:4,name:"Kẹp tóc hoa",category:"Phụ kiện tóc",price:45000,icon:"🌼",desc:"Điểm nhấn nhẹ nhàng"},
-  {id:5,name:"Dây chuyền nơ nhỏ",category:"Trang sức",price:79000,icon:"📿",desc:"Phụ kiện xinh xắn"},
-  {id:6,name:"Móc khóa handmade",category:"Móc khóa",price:55000,icon:"🔑",desc:"Món quà nhỏ đáng yêu"},
-  {id:7,name:"Gối ghim kim",category:"Gối ghim kim",price:65000,icon:"🧵",desc:"Bạn đồng hành cho góc may vá"},
-  {id:8,name:"Set phụ kiện DIY",category:"DIY",price:99000,icon:"🧶",desc:"Tự tay làm món đồ của bạn"},
-  {id:9,name:"Túi đeo mini",category:"Túi",price:159000,icon:"👜",desc:"Nhỏ gọn cho những ngày xinh"},
-  {id:10,name:"Bóp đựng tai nghe",category:"Bóp / Ví",price:59000,icon:"💝",desc:"Nhỏ gọn, nhiều công dụng"},
-  {id:11,name:"Kẹp tóc nơ caro",category:"Phụ kiện tóc",price:49000,icon:"🎀",desc:"Nơ caro phong cách vintage"},
-  {id:12,name:"Set charm DIY",category:"DIY",price:75000,icon:"✨",desc:"Mix & match theo ý thích"}
+  {id:1,name:"Túi Tote Vải Canvas",category:"Túi",price:119000,icon:"👜",desc:"Túi handmade nhỏ xinh"},
+  {id:2,name:"Ví Vải Thô/Canvas",category:"Bóp / Ví",price:149000,icon:"👛",desc:"Gọn gàng, tiện mang theo"},
+  {id:3,name:"Cột Tóc Scrunchies",category:"Phụ kiện tóc",price:20000 - 55000,icon:"🎀",desc:"Vải Xô Muslim/ Thô"},
+  {id:4,name:"Kẹp Tóc Handmade",category:"Phụ kiện tóc",price:45000,icon:"🌼",desc:"Điểm nhấn nhẹ nhàng"},
+  {id:5,name:"Dây Chuyền",category:"Trang sức",price:15000 - 79000,icon:"📿",desc:"Phụ kiện xinh xắn, thu hút tài lộc"},
+  {id:6,name:"Móc khóa Handmade",category:"Móc khóa",price:9000 - 89000,icon:"🔑",desc:"Món quà nhỏ đáng yêu"},
+  {id:7,name:"Gối Ghim Kim",category:"Gối ghim kim",price:49000,icon:"🧵",desc:"Bạn đồng hành cho góc may vá"},
+  {id:8,name:"Phụ Kiện DIY",category:"DIY",price:9000 - 39000,icon:"🧶",desc:"Tự tay làm món đồ của bạn"},
+  {id:9,name:"Túi Make Up/ Sò",category:"Túi",price:39000 - 79000,icon:"👜",desc:"Nhỏ gọn cho những ngày xinh"},
+  {id:10,name:"Bóp Bút/ Viết",category:"Bóp / Ví",price:79000,icon:"💝",desc:"Dung tích lớn, nhiều công dụng"},
+  {id:11,name:"Túi Đựng Laptop/ Tai Nghe",category:"Phụ kiện tóc",price:39000 - 129000,icon:"🎀",desc:"Phong cách vintage"},
+  {id:12,name:"Tag Tên Theo Yêu Cầu",category:"DIY",price:19000 - 59000,icon:"✨",desc:"Mix & match theo ý thích"}
 ];
 
 let cart = JSON.parse(localStorage.getItem("tnth_cart") || "[]");
