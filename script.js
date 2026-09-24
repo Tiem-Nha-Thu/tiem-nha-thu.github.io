@@ -10,6 +10,14 @@ const products = [
     image: "images/tui-1.jpg",
     description: "Túi handmade nhỏ xinh"
   },
+   details: [
+    "Kích Thước: 30 × 35 cm (Chưa Tính Quai Đeo)",
+    "Chất Liệu: Vải Canvas",
+    "Lót Trong: Vải Dù/Thô",
+    "Có Khóa Kéo/ Nút Gài",
+    "Sản Phẩm Handmade"
+  ]
+}
 
   {
     id: 2,
@@ -19,6 +27,14 @@ const products = [
     image: "images/bop-but-1.jpg",
     description: "Dung tích lớn, nhiều công dụng"
   }
+   details: [
+    "Kích Thước: 23 x 6 x 6.5 cm",
+    "Chất Liệu: Vải Thô/ Canvas",
+    "Lót Trong: Vải Dù Chắc Chắn",
+    "Có Khóa Kéo: Răng 5 Cá Sấu Bền Bỉ",
+    "Sản Phẩm Handmade"
+  ]
+}
   
   {
     id: 3,
