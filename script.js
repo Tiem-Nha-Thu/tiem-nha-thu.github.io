@@ -2,20 +2,98 @@ const ZALO_NUMBER = "0907808645";
 const ZALO_URL = "https://zalo.me/" + ZALO_NUMBER;
 
 const products = [
-  {id:1,name:"Túi Xách Vải Canvas",category:"Túi",price:119000,icon:"👜",desc:"Túi handmade nhỏ xinh"},
-  {id:2,name:"Ví Vải Thô/Canvas",category:"Bóp / Ví",price:149000,icon:"👛",desc:"Gọn gàng, tiện mang theo"},
-  {id:3,name:"Cột Tóc Scrunchies",category:"Phụ kiện tóc",price:20000,icon:"🎀",desc:"Vải Xô Muslim/ Thô"},
-  {id:4,name:"Kẹp Tóc Handmade",category:"Phụ kiện tóc",price:25000,icon:"🌼",desc:"Điểm nhấn nhẹ nhàng"},
-  {id:5,name:"Dây Chuyền",category:"Trang sức",price:15000,icon:"📿",desc:"Phụ kiện xinh xắn, thu hút tài lộc"},
-  {id:6,name:"Móc khóa Handmade",category:"Móc khóa",price:9000,icon:"🔑",desc:"Món quà nhỏ đáng yêu"},
-  {id:7,name:"Gối Ghim Kim",category:"Gối ghim kim",price:49000,icon:"🧵",desc:"Bạn đồng hành cho góc may vá"},
-  {id:8,name:"Phụ Kiện DIY",category:"DIY",price:9900,icon:"🧶",desc:"Tự tay làm món đồ của bạn"},
-  {id:9,name:"Túi Make Up/ Sò",category:"Túi",price:39000,icon:"👜",desc:"Nhỏ gọn cho những ngày xinh"},
-  {id:10,name:"Bóp Bút/ Viết",category:"Bóp / Ví",price:79000,icon:"💝",desc:"Dung tích lớn, nhiều công dụng"},
-  {id:11,name:"Túi Đựng Laptop/ Tai Nghe",category:"Túi",price:39000,icon:"🎀",desc:"Phong cách vintage"},
-  {id:12,name:"Tag Tên Theo Yêu Cầu",category:"DIY",price:19000,icon:"✨",desc:"Mix & match theo ý thích"}
-];
+  {
+    id: 1,
+    name: "Túi Vải Canvas",
+    category: "Túi",
+    price: 119000,
+    image: "images/tui-1.jpg",
+    description: "Túi handmade nhỏ xinh"
+  },
 
+  {
+    id: 2,
+    name: "Bóp Bút/ Viết",
+    category: "Bóp/Ví",
+    price: 79000,
+    image: "images/bop-but-1.jpg",
+    description: "Dung tích lớn, nhiều công dụng"
+  }
+  
+  {
+    id: 3,
+    name: "Ví Vải Thô/Canvas",
+    category: "Bóp/Ví",
+    price: 149000,
+    image: "images/vi-mini-1.jpg",
+    description: "Gọn gàng, tiện mang theo"
+  },
+
+  {
+    id: 4,
+    name: "Cột tóc scrunchies",
+    category: "Phụ kiện tóc",
+    price: 20000,
+    image: "images/cot-toc-1.jpg",
+    description: "Vải Xô Muslim/ Thô"
+  },
+
+  {
+    id: 5,
+    name: "Kẹp tóc",
+    category: "Phụ kiện tóc",
+    price: 25000,
+    image: "images/kep-toc-1.jpg",
+    description: "Điểm nhấn nhẹ nhàng"
+  },
+
+  {
+    id: 6,
+    name: "Móc khóa handmade",
+    category: "Móc khóa",
+    price: 9000,
+    image: "images/moc-khoa-1.jpg",
+    description: "Món quà nhỏ đáng yêu"
+  }
+
+  {
+    id: 7,
+    name: "Dây Chuyền",
+    category: "Trang sức",
+    price: 15000,
+    image: "images/trang-suc-1.jpg",
+    description: "Phụ kiện xinh xắn, thu hút tài lộc"
+  }
+
+{
+    id: 8,
+    name: "Gối Ghim Kim",
+    category: "Gối Ghim Kim",
+    price: 39000,
+    image: "images/goi-ghim-kim-1.jpg",
+    description: "Bạn đồng hành cho góc may vá"
+  }
+
+{
+    id: 9,
+    name: "Phụ Kiện DIY",
+    category: "DIY",
+    price: 9000,
+    image: "images/DIY-1.jpg",
+    description: "Tự tay làm món đồ của bạn"
+  }
+
+{
+    id: 10,
+    name: "Túi Đựng Đồ Cá Nhân",
+    category: "Túi",
+    price: 39000,
+    image: "images/tui-ca-nhan-1.jpg",
+    description: "Nhỏ gọn cho những ngày xinh"
+  }
+
+  }
+];
 let cart = JSON.parse(localStorage.getItem("tnth_cart") || "[]");
 let activeCategory = "Tất cả";
 let searchTerm = "";
@@ -52,10 +130,10 @@ function renderProducts(){
   empty.classList.toggle("hidden", list.length>0);
   grid.innerHTML = list.map(p => `
     <article class="product-card">
-      <div class="product-image">
-        <span class="product-tag">${p.category}</span>
-        <span>${p.icon}</span>
-      </div>
+     <div class="product-image">
+  <span class="product-tag">${p.category}</span>
+  <img src="${p.image}" alt="${p.name}" loading="lazy">
+</div>
       <div class="product-info">
         <h3>${p.name}</h3><p>${p.desc}</p>
         <div class="price-row"><span class="price">${money(p.price)}</span><button class="add-btn" data-add="${p.id}" aria-label="Thêm ${p.name}">+</button></div>
