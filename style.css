@@ -20,3 +20,25 @@
 .about-photo{background:#efcbd8}
 .zalo-box{background:#f3d6e1}
 footer{background:#3d3035}
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #fceaf1;
+}
+
+.product-tag {
+  z-index: 5;
+}
